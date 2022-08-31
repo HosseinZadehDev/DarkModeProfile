@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="rtl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="fonts">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="webfonts">
+</head>
+<body>
+    <div class="box">
+        <div class="profile">
+            <div class="imgBox">
+                <img src="img/IMG_20220809_142244_005.jpg">
+            </div>
+            <h4 class="text">محمد مهدی حسین زاده <br><span>Senior Frontend Engineer</span></h4>
+        </div>
+        <ul class="menu">
+            <li>
+                <label>
+                    <span class="title"><ion-icon name="location"></ion-icon>مکان یاب</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="title"><ion-icon name="bluetooth"></ion-icon>بلوتوث</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="title"><ion-icon name="airplane"></ion-icon>حالت هواپیما</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="title"><ion-icon name="moon"></ion-icon>حالت شب</span>
+                    <span class="action">
+                        <input type="checkbox" id="Dark">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+        </ul>
+    </div>
+<div class="footer">
+    <h3>Coded by hosseinzadeh.dev</h3>
+  </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let body = document.querySelector("body"),
+        dark = document.querySelector("#Dark");
+    dark.onclick = function(){
+        if(dark.checked == true){
+            body.classList.add("darkMode")
+        }else{
+            body.classList.remove("darkMode")
+        }
+    }
+</script>
+</body>
+</html>
